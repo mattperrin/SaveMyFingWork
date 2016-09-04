@@ -117,9 +117,24 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="menuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
+  <data name="textBox1.Text" xml:space="preserve">
+    <value>Save My F***ing Work
+Written by Matt Perrin
+Web:  mattperrin.github.io
+Twitter: @mattperrin
+
+A simple utility for monitoring an entire directory for file modification changes, 
+and then backing them up with a timestamp to another directory. 
+If you like this app or find it helpful, let me know!  :)
+
+Originally written to be a background process for Github Atom and PICO-8 game development, as well as Arduino development. The idea being to backup each set of incremenetal updates in source code before they could be accidentally deleted by a utility without a file refresh capability.
+
+SaveMyFIngWork by https://github.com/mattperrin/SaveMyFingWork is licensed under a 
+Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.
+
+Based on a work at https://github.com/mattperrin/SaveMyFingWork.
+</value>
+  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>

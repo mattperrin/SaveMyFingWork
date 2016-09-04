@@ -28,15 +28,19 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.btn_DeleteAllBackups = new System.Windows.Forms.Button();
             this.btn_ToggleMonitor = new System.Windows.Forms.Button();
             this.btn_AddDirectoryToMonitor = new System.Windows.Forms.Button();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.infoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // btn_DeleteAllBackups
             // 
             this.btn_DeleteAllBackups.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_DeleteAllBackups.Location = new System.Drawing.Point(636, 12);
+            this.btn_DeleteAllBackups.Location = new System.Drawing.Point(636, 27);
             this.btn_DeleteAllBackups.Name = "btn_DeleteAllBackups";
             this.btn_DeleteAllBackups.Size = new System.Drawing.Size(148, 23);
             this.btn_DeleteAllBackups.TabIndex = 0;
@@ -46,7 +50,7 @@
             // 
             // btn_ToggleMonitor
             // 
-            this.btn_ToggleMonitor.Location = new System.Drawing.Point(166, 12);
+            this.btn_ToggleMonitor.Location = new System.Drawing.Point(166, 27);
             this.btn_ToggleMonitor.Name = "btn_ToggleMonitor";
             this.btn_ToggleMonitor.Size = new System.Drawing.Size(148, 23);
             this.btn_ToggleMonitor.TabIndex = 2;
@@ -56,13 +60,30 @@
             // 
             // btn_AddDirectoryToMonitor
             // 
-            this.btn_AddDirectoryToMonitor.Location = new System.Drawing.Point(12, 12);
+            this.btn_AddDirectoryToMonitor.Location = new System.Drawing.Point(12, 27);
             this.btn_AddDirectoryToMonitor.Name = "btn_AddDirectoryToMonitor";
             this.btn_AddDirectoryToMonitor.Size = new System.Drawing.Size(148, 23);
             this.btn_AddDirectoryToMonitor.TabIndex = 4;
             this.btn_AddDirectoryToMonitor.Text = "Add Directory To Monitor";
             this.btn_AddDirectoryToMonitor.UseVisualStyleBackColor = true;
             this.btn_AddDirectoryToMonitor.Click += new System.EventHandler(this.btn_AddDirectoryToMonitor_Click);
+            // 
+            // menuStrip1
+            // 
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.infoToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(796, 24);
+            this.menuStrip1.TabIndex = 5;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // infoToolStripMenuItem
+            // 
+            this.infoToolStripMenuItem.Name = "infoToolStripMenuItem";
+            this.infoToolStripMenuItem.Size = new System.Drawing.Size(52, 20);
+            this.infoToolStripMenuItem.Text = "About";
+            this.infoToolStripMenuItem.Click += new System.EventHandler(this.infoToolStripMenuItem_Click);
             // 
             // Form1
             // 
@@ -72,9 +93,15 @@
             this.Controls.Add(this.btn_AddDirectoryToMonitor);
             this.Controls.Add(this.btn_ToggleMonitor);
             this.Controls.Add(this.btn_DeleteAllBackups);
+            this.Controls.Add(this.menuStrip1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
             this.Text = "Save My F***ing Work";
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -83,6 +110,8 @@
         private System.Windows.Forms.Button btn_DeleteAllBackups;
         private System.Windows.Forms.Button btn_ToggleMonitor;
         private System.Windows.Forms.Button btn_AddDirectoryToMonitor;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem infoToolStripMenuItem;
     }
 }
 
